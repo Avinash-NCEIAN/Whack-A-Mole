@@ -15,6 +15,8 @@ let hitMusic = new Audio('./Assets/music/hitMusic.mp3');
 let winMusic = new Audio('./Assets/music/crowd-cheer-ii-6263.mp3');
 let lostMusic = new Audio('./Assets/music/lost-game.mp3');
 
+pause.style.display = 'none';
+
 
 function randomMole(){
     squares.forEach(square => {
@@ -76,7 +78,7 @@ squares.forEach(square => {
 })
 
 function startgame(){
-    // timeleft.style.color = 'black';
+    pause.style.display = 'flex';
     
     gameMusic.play();
     winMusic.pause();
