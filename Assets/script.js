@@ -44,6 +44,7 @@ function countDown(){
     
 
     if(timeLeft === 0){
+        pause.style.display = 'none';
         hitMusic.pause();
         gameMusic.pause();
         clearInterval(timerId);
