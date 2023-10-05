@@ -117,4 +117,3 @@ function pausegame() {
 
 start.addEventListener('click', startgame);
 pause.addEventListener('click', pausegame);
-
